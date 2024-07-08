@@ -1,0 +1,97 @@
+/*===== CART SECTION =====*/
+
+#cart-page {
+    padding: 4rem 0 2rem;
+  }
+  
+  #cart-page h2 {
+    font-size: var(--h1-font-size);
+    color: var(--title-color);
+    text-align: center;
+    margin-bottom: var(--mb-3);
+  }
+  
+  #cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--container-color);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(3, 74, 40, .15);
+  }
+  
+  .cart-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 0.5rem;
+  }
+  
+  .cart-item-info {
+    flex: 1;
+    margin-left: 1.5rem;
+  }
+  
+  .cart-item-info h3 {
+    font-size: var(--h2-font-size);
+    color: var(--title-color);
+    margin-bottom: var(--mb-1);
+  }
+  
+  .cart-item-info span {
+    font-size: var(--normal-font-size);
+    color: var(--text-color);
+  }
+  
+  .cart-item-total {
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-semi-bold);
+    color: var(--first-color);
+  }
+  
+  #cart-summary {
+    max-width: 800px;
+    margin: 2rem auto 0;
+    background-color: var(--container-color);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(3, 74, 40, .15);
+    text-align: right;
+  }
+  
+  #cart-summary p {
+    font-size: var(--normal-font-size);
+    color: var(--text-color);
+    margin-bottom: var(--mb-1);
+  }
+  
+  #cart-summary p:last-child {
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-semi-bold);
+    color: var(--first-color);
+  }
+  
+  #cart-summary button {
+    padding: 0.75rem 1.5rem;
+    background-color: var(--first-color);
+    color: #FFF;
+    border: none;
+    border-radius: 0.5rem;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #cart-summary button:hover {
+    background-color: var(--first-color-alt);
+  }
+  

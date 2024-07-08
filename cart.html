@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+     <!--========== BOX ICONS ==========-->
+     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+     <!--========== CSS ==========-->
+     <link rel="stylesheet" href="./assets/css/styles.css">
+    
+</head>
+<body>
+    <!-- Header -->
+    <header class="l-header">
+        <nav class="nav bd-container">
+            <a href="index.html" class="nav__logo">Tasty</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html" class="nav__link">Menu</a></li>
+                    <li class="nav__item"><a href="index.html" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="cart section bd-container" id="cart">
+            <h2 class="section-title">Cart Detail</h2>
+            <div id="cart-container" class="cart__container bd-grid">
+                <!-- Cart items will be injected here by JavaScript -->
+            </div>
+            <div id="bill-container" class="bill">
+                <h2 class="bill__title">Billing Details</h2>
+                <div class="bill__details">
+                  <div class="bill__details-item">Subtotal:</div>
+                  <div class="bill__details-item bill__details-item-value"></div>
+                </div>
+                <div class="bill__details">
+                  <div class="bill__details-item">Tax (10%):</div>
+                  <div class="bill__details-item bill__details-tax"></div>
+                </div>
+                <div class="bill__details">
+                  <div class="bill__details-item">Shipping:</div>
+                  <div class="bill__details-item bill__details-shipping"></div>
+                </div>
+                <hr>
+                <div class="bill__total" id="billTotal"></div>
+                <button class="bill__checkout-button">Proceed to Checkout</button>
+              </div>
+              <div id="timer" class="timer">
+                <span id="timer-label">Time left to complete your order:</span>
+                <span id="timer-display"></span>
+              </div>
+        </section>
+    </main>
+
+    <!-- Scroll Top -->
+    <a href="#" class="scrolltop" id="scroll-top"><i class="bx bx-chevron-up scrolltop__icon"></i></a>
+
+    <script src="./assets/js/cart.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+</body>
+</html>
